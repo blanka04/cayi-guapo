@@ -24,5 +24,5 @@ document.getElementById('yes').addEventListener('click', function() {
   message.textContent = 'Sii, muy bien cayi uwu';
   
   // Mostrar una imagen al final
-  imageContainer.innerHTML = '<img src "Picsart_24-10-12_02-53-20-901.jpg" alt="Imagen final" width="300">';
+  imageContainer.innerHTML = '<img src="Picsart_24-10-12_02-53-20-901.jpg" alt="Imagen final" width="300">';
 });
