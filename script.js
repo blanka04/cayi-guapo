@@ -1,5 +1,9 @@
 document.getElementById('yes').addEventListener('click', function() {
-    document.body.innerHTML = '<h2>Sii, muy bien cayi uwu</h2><img src="https://raw.githubusercontent.com/tu-usuario/nombre-del-repositorio/main/Picsart_24-10-12_02-53-20-901.jpg" alt="Sii, muy bien cayi uwu">';
+    // Cambia el contenido del body al hacer clic en "Sí"
+    document.body.innerHTML = '<h2>Sii, muy bien cayi uwu</h2>';
+    
+    // Mostrar la imagen final al seleccionar "Sí"
+    document.body.innerHTML += '<img src="https://raw.githubusercontent.com/tu-usuario/nombre-del-repositorio/main/Picsart_24-10-12_02-53-20-901.jpg" alt="Imagen final">';
 });
 
 document.getElementById('no').addEventListener('click', function() {
