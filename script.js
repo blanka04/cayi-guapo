@@ -19,7 +19,7 @@ document.getElementById('no').addEventListener('click', function() {
     if (noButton.innerText === 'No') {
         noButton.innerText = '¿Seguro?';
     } else if (noButton.innerText === '¿Seguro?') {
-        noButton.innerText = '¿Estás seguro cieguito?';
+        noButton.innerText = '¿Estás seguro ciegito?';
     } else if (noButton.innerText === '¿Estás seguro ciegito?') {
         noButton.innerText = 'Dale al sí bobo';
     }
