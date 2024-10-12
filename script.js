@@ -1,28 +1,29 @@
-let noClickCount = 0;
+document.getElementById('yes').addEventListener('click', function() {
+    document.body.innerHTML = '<h2>Sii, muy bien cayi uwu</h2><img src="https://raw.githubusercontent.com/tu-usuario/nombre-del-repositorio/main/nueva-imagen.jpg" alt="Sii, muy bien cayi uwu">';
+});
 
 document.getElementById('no').addEventListener('click', function() {
-  const noButton = document.getElementById('no');
-  const message = document.getElementById('message');
-
-  noClickCount++;
-  noButton.style.transform = 'scale(0.8)'; // Hacer el botón más pequeño
-
-  if (noClickCount === 1) {
-    message.textContent = '¿Seguro?';
-  } else if (noClickCount === 2) {
-    message.textContent = '¿Estás seguro ciegito?';
-  } else if (noClickCount === 3) {
-    message.textContent = 'Dale al sí, bobo';
-    noClickCount = 0; // Reiniciar el contador
-  }
+    const noButton = document.getElementById('no');
+    
+    // Reducir el tamaño del botón "No"
+    let currentScale = parseFloat(noButton.style.transform.replace('scale(', '').replace(')', '')) || 1;
+    currentScale *= 0.8;  // Cada clic reduce el tamaño al 80% del tamaño actual
+    noButton.style.transform = `scale(${currentScale})`;
+    
+    // Cambiar el texto del botón "No"
+    if (noButton.innerText === 'No') {
+        noButton.innerText = '¿Seguro?';
+    } else if (noButton.innerText === '¿Seguro?') {
+        noButton.innerText = '¿Estás seguro cieguito?';
+    } else if (noButton.innerText === '¿Estás seguro cieguito?') {
+        noButton.innerText = 'Dale al sí bobo';
+    }
+    
+    // Mover el botón "No" a una posición aleatoria
+    const randomX = Math.random() * (window.innerWidth - noButton.offsetWidth);
+    const randomY = Math.random() * (window.innerHeight - noButton.offsetHeight);
+    noButton.style.position = 'absolute';
+    noButton.style.left = `${randomX}px`;
+    noButton.style.top = `${randomY}px`;
 });
 
-document.getElementById('yes').addEventListener('click', function() {
-  const message = document.getElementById('message');
-  const imageContainer = document.getElementById('imageContainer');
-
-  message.textContent = 'Sii, muy bien cayi uwu';
-  
-  // Mostrar una imagen al final
-  imageContainer.innerHTML = '<img src="Picsart_24-10-12_02-53-20-901.jpg" alt="Imagen final" width="300">';
-});
