@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Eres guapo cayi?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>¿Eres guapo cayi?</h1>
+    <img src="Picsart_24-10-12_02-03-11-962.jpg" alt="Imagen de Cayi" id="cayiImage">
+    <div class="options">
+      <div class="option" id="yes">Sí</div>
+      <div class="option" id="no">No</div>
+    </div>
+    <p id="message"></p>
+    <div id="imageContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
