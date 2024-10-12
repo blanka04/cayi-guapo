@@ -1,66 +1,43 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Establece el fondo amarillo claro */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+    background-color: #fff9c4; /* Amarillo claro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
 }
 
-.container {
-  text-align: center;
-}
-
+/* Estilos para el título */
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+    font-size: 2.5em; /* Tamaño grande para el título */
+    color: #333;
 }
 
-#cayiImage {
-  margin-bottom: 20px;
-  width: 300px; /* Puedes ajustar el tamaño */
-  border-radius: 15px; /* Para darle bordes redondeados */
+/* Estilos para los botones */
+button {
+    font-size: 1.5em; /* Tamaño más grande para los botones */
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4caf50; /* Verde claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-.options {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+button#no {
+    background-color: #f44336; /* Rojo para el botón "No" */
 }
 
-.option {
-  padding: 20px 40px;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+/* Imagen que aparece inicialmente */
+#initial-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
-#yes {
-  background-color: green;
-}
-
-#no {
-  background-color: red;
-}
-
-#message {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  color: #333;
-}
-
-#imageContainer {
-  margin-top: 20px;
-}
-
-.option:hover {
-  transform: scale(1.1);
+/* Imagen que aparece al final */
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
 }
